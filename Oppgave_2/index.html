@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oppgave 2</title>
+    <style>
+      #div {
+        position: fixed;
+        top: 20%;
+        font-size: 6em;
+        text-align: center;
+        width: 100%;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        position:fixed;
+        background-color: #404040
+      }
+
+      input {
+        width: 12em;
+        height: 80px;
+        border-radius: 2em;
+        font-size: 1.5em;
+        border: solid 1px white;
+      }
+    </style>
+  </head>
+
+  <body>
+      <div id="div">0</div>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <input
+              type="submit"
+              onclick="tellerObj.okeTeller()"
+              value="Øke teller med 1"
+            />
+          </td>
+          <td>
+            <input
+              type="submit"
+              onclick="tellerObj.nullstillTeller()"
+              value="Nullstill teller"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
